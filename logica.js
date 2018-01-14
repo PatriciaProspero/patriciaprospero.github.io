@@ -5,8 +5,9 @@
 	}
 	
 
-function tabuada (numeroRecebido) 
+function tabuada () 
 {
+	numeroRecebido = document.getElementById('valor').value;
 	document.write("Numero recebido: " + numeroRecebido);
 	document.write("<br>");
 
