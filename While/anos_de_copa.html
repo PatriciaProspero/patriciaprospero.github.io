@@ -1,0 +1,18 @@
+<script>
+
+	function mostra(frase){
+		document.write(frase + "<br>");
+	};
+
+	var anoDeCopaTexto = prompt(" Qual o ano inicial?");
+	var anoLimite = prompt(" Qual o ano limite?");
+	var anoDeCopa = parseInt(anoDeCopaTexto); // Quando vc colocar o prompt tem sempre que tratar ele de texto para numero, se não da loop infinito.
+
+	while (anoDeCopa <= anoLimite){
+	mostra(anoDeCopa + " tem copa!");
+	anoDeCopa = anoDeCopa + 4;
+	}
+
+	mostra ("Ufa! Esses foram os anos de copa ate " + anoLimite + "!");
+
+</script>
