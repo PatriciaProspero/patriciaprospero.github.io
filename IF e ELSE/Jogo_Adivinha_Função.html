@@ -1,0 +1,45 @@
+<meta charset = "utf - 8">
+
+<script>
+
+function pula_linha()
+{
+	document.write ("<br>");
+};
+
+function mostra (frase)
+{
+	document.write(frase);
+};
+
+function sorteia (numero)
+{
+	Math.round (Math.random() * 10)
+	return numero;
+};
+
+var numerocomputador = sorteia(10);
+var numeropensado = prompt ("Já pensei. Qual você acha que é?");
+
+if (isNaN(numeropensado))
+{
+	document.write("Apenas números são permitidos neste jogo!");
+}
+
+if (numeropensado == numerocomputador) 
+{
+	mostra("Uau! Você acertou, pois eu pensei no " + numerocomputador);
+}
+
+if (numerocomputador > numeropensado)
+{
+	mostra("Voce errou! Eu tinha pensado no em um numero maior que o informado. ");
+}
+
+if (numerocomputador < numeropensado)
+
+{
+	mostra("Voce errou! Eu tinha pensado no em um numero menor que o informado. ");
+}
+
+</script>
