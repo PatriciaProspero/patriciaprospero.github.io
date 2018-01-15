@@ -1,0 +1,35 @@
+<script>
+
+	// Função para pular a linha.
+
+	var pulalinha = function ()
+		{
+			document.write ("<br>");
+		};
+
+// Função para Mostrar a Frase sem precisar digitar o document.write no texto.
+
+	var mostra = function (frase)
+		{
+			document.write(frase); // Para deixar a frase em Negrito basta adicionar o .bold() na frente da frase.
+			pulalinha(); // Essa função é para pular a linha, a mesma que fizemos logo acima.
+		};
+
+// Função para Calcular o IMC do individuo.
+
+	var calcula_imc = function(altura,peso)
+		{
+			var imc = Math.round(peso / (altura * altura)); // o Math.round é para arrednondar o valor.
+			return imc
+		};
+
+	var nome = prompt("Qual o seu nome?");
+	var peso = prompt(nome +" "+ "qual o seu peso?");
+	var altura = prompt(nome + " " + "qual a sua altura?");
+	var imc_usuario = calcula_imc(altura,peso);
+
+	mostra(nome + " " + "o seu IMC é: " + imc_usuario);
+
+// Podemos utilizar o Math.round para arredondar o resultado do IMC caso preferir, pois normalmnete da quebrado.
+
+</script>
