@@ -1,0 +1,25 @@
+<script>
+
+var primeira = function ()
+{
+	console.log("1 - antes");
+	segunda();
+	console.log("1 - depois");
+};
+
+function segunda () // Podemos fazer a função direto desta forma, tbm é uma possibilidade.
+{
+	console.log("2 - antes");
+	terceira();
+	console.log("2 - depois");
+};
+
+function terceira ()
+{
+	document.write("3");
+};
+
+primeira();
+
+
+</script>
