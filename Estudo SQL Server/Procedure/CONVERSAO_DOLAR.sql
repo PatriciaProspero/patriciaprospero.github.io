@@ -11,7 +11,7 @@
 CREATE OR ALTER PROCEDURE CONVERSAO_DOLAR
 (
 	@Valor_Dolar NUMERIC (19,2),
-	@Cotação_Dolar NUMERIC(19,2) -- Irá ler a cotação do dolar
+	@Cotacao_Dolar NUMERIC(19,2) -- Irá ler a cotação do dolar
 )
 AS
 BEGIN
@@ -19,7 +19,7 @@ BEGIN
 DECLARE 
 	@Valor_Real VARCHAR(50)
 
-SET @Valor_Real = @Valor_Dolar * @Cotação_Dolar;
+SET @Valor_Real = @Valor_Dolar * @Cotacao_Dolar;
 SET @Valor_Real = 'R$ '+ @Valor_Real;
 
 SELECT @Valor_Real
